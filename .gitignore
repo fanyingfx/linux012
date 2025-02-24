@@ -1,2 +1,5 @@
-bootsect.o
+*.o
+tools/build
+setup
+bootsect
 linux.img
