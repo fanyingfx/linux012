@@ -12,15 +12,14 @@
 
 #define SYS_SIZE 0x2000
 
-#define DEFAULT_MAJOR_ROOT 3
-#define DEFAULT_MINOR_ROOT 6
+#define DEFAULT_MAJOR_ROOT 2
+#define DEFAULT_MINOR_ROOT 29
 
 #define SETUP_SECTS 4
 
 #define STRINGIFY(x) #x
 
-#define ARG_LEN 3
-
+#define ARG_LEN 4
 
 void die(char * str)
 {
@@ -116,7 +115,6 @@ int main(int argc, char **argv)
 		i+=c;
 	}
 	
-    /*
 	if ((id = open(argv[3], O_RDONLY, 0)) < 0)
 		die("Unable to open 'system'");
 	for (i = 0; (c = read(id, buf, sizeof(buf))) > 0; i += c)
@@ -126,7 +124,6 @@ int main(int argc, char **argv)
 	fprintf(stderr, "System is %d bytes.\n", i);
 	if (i > SYS_SIZE * 16)
 		die("System is too big");
-    */
 
 	return 0;
 }
